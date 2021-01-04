@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  sonos-web:
+    container_name: sonos-web
+    image: psychlist/docker-sonos-web-arm:latest
+    network_mode: "host"
+    ports:
+      - 5050:5050
+    restart: unless-stopped
